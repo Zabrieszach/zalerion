@@ -1,0 +1,232 @@
+body {
+    background-image: url("imagens/fundo_inicial.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100vh;
+    font-family: 'Julius Sans One', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+h4 {
+    font-size: 30px;
+    padding: 30px;
+    color: #ffffff;
+}
+
+article {
+    margin: auto;
+    text-align: center;
+}
+
+#welcome, #yourName, #win, #questionario, #area_limpa, #tudo_limpo {
+    opacity: 85%;
+    color: #ffffff;
+    font-family: 'Julius Sans One', sans-serif;
+    width: 75vw;
+    height: 55vh;
+    background-color: #31686D;
+    border-radius: 80px;
+    margin: 130px;
+    z-index: 1;
+    overflow: hidden;
+    position: absolute;
+}
+
+#scene {
+    overflow: hidden;
+    position: absolute;
+    left: 13%;
+}
+
+#historia {
+    background-image: url("imagens/mapas/mapa_final.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    left: 15%;
+}
+
+#loose, #no_time {
+    width: 75vw;
+    height: 55vh;
+    background-color: #BD5943;
+    border-radius: 80px;
+    margin: 100px auto auto;
+}
+
+#name {
+    margin: 30px auto;
+    padding: 30px;
+    width: 60%;
+    border: none;
+    background-color: #f9f9f9;
+}
+
+#barra {
+    background-color: #31686D;
+    width: 15%;
+    height: 100vh;
+}
+
+#logo {
+    margin: 50px auto 30px;
+}
+
+#enter, #maps, #play, #try_again1, #try_again2, #question, #verdadeiro, #falso, #submeter, #maps, #proximo_nivel, #refazer_questao, #next_final {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #31686D;
+    border-radius: 30px;
+    font-size: 20px;
+    outline: none;
+}
+
+#next {
+    margin: 0px auto;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #31686D;
+    border-radius: 30px;
+    font-size: 20px;
+    outline: none;
+}
+
+#time, #points {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#tempo_txt, #pontos {
+    width: 100px;
+    height: 40px;
+    background-color: #ffffff;
+    color: blue;
+    border: 5px solid #9DC5BB;
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+#shot {
+    width: 30px;
+    height: auto;
+}
+
+#sounds {
+    position: absolute;
+    top: 350px;
+    margin: 30px 30px;
+}
+
+#resposta_certa {
+    width: 75vw;
+    height: 55vh;
+    background-color: #31686D;
+    border-radius: 80px;
+    margin: 100px auto auto;
+}
+
+#resposta_errada {
+    width: 75vw;
+    height: 55vh;
+    background-color: #BD5943;
+    border-radius: 80px;
+    margin: 100px auto auto;
+}
+
+#ambiente {
+    padding-left: 25px;
+    height: 100vh;
+}
+
+#jogador, #jogador2 {
+    width: auto;
+    height: 100px;
+}
+
+#mapa {
+    padding-left: 25px;
+    width: auto;
+    height: 100vh;
+}
+
+#pagina {
+    padding-left: 0;
+    margin: 60px;
+    width: auto;
+    height: 80vh;
+}
+
+#river, #beach, #florest {
+    width: 20%;
+    height: auto;
+}
+
+#tutorial {
+    width: 150px;
+    height: auto;
+}
+
+#T_texto, #limpo {
+    width: 50%;
+    height: auto;
+    opacity: 85%;
+    z-index: 2;
+}
+
+#fechar_info {
+    position: absolute;
+    left: 721px;
+    top: 93px;
+    z-index: 3;
+}
+
+#fechar_mapa {
+    position: absolute;
+    left: 85%;
+    top: 12%;
+    z-index: 3;
+}
+
+#prox_pagina {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
+
+#botao_historia {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 77%;
+    left: 87%;
+}
+

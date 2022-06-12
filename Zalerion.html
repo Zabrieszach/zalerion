@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zalerion</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="estilos.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <script src="script_n1.js"></script>
+</head>
+
+<body>
+
+<main class="container-fluid">
+
+    <div id="tela_inicial" class="mx-0 px-0 text-center">
+        <div id="welcome" class="text-center">
+            <h2>Bem-vindo a </h2>
+            <h1> ZALERION </h1>
+            <article>
+                <input id="enter" class="btn" type="button" value="Entrar"/>
+            </article>
+        </div>
+        <div id="yourName" class="text-center">
+            <h2>Qual é o teu nome?</h2>
+            <article>
+                <input id="name" type="text" class="form-control text-center" placeholder="o meu nome" value=""/>
+            </article>
+            <article>
+                <input id="maps" class="btn" type="button" value="Mapa"/>
+            </article>
+        </div>
+    </div>
+
+    <div id="historia" class="container-fluid">
+        <img id="pagina" src="imagens/telas/quadrado_fala1.png">
+        <img id="prox_pagina" src="imagens/Botoes/proximo.png" class="btn" type="button"/>
+        <img id="fechar_mapa" src="imagens/Botoes/exit.png" class="btn" type="button"/>
+    </div>
+
+    <div id="scene" class="mx-0 px-0">
+        <div id="sceneextra">
+        </div>
+    </div>
+
+    <div id="loose" class="container-fluid">
+        <div class="align-items-center text-center">
+            <h2>O microplástico chegou à praia!!</h2>
+            <h4>A praia está poluída! Não conseguiste impedir que os microplásticos chegassem à praia! Tenta de
+                novo! </h4>
+            <article><input id="try_again1" class="btn" type="button" value="Quero tentar outra vez!"/></article>
+        </div>
+    </div>
+
+    <div id="no_time" class="container-fluid">
+        <div class="align-items-center text-center">
+            <h2>Acabou o tempo!!</h2>
+            <h4>Não conseguiste destruir todos os microplásticos! Tenta de novo! </h4>
+            <article><input id="try_again2" class="btn" type="button" value="Quero tentar outra vez!"/></article>
+        </div>
+    </div>
+
+    <div id="win" class="container-fluid">
+        <div class="align-items-center text-center">
+            <h2>Parabéns!!</h2>
+            <h4>Conseguiste transformar todos os objetos! Para avançares para o próximo nível, responde ao seguinte “Verdade ou Mentira”.
+            </h4>
+            <article><input id="question" class="btn" type="button" value="Continuar"/></article>
+        </div>
+    </div>
+
+    <div id="questionario" class="container-fluid">
+        <div class="align-items-center text-center">
+            <h4 id="afirmacao"></h4>
+            <article class="px-5">
+                <input id="verdadeiro" class="btn" type="button" value="Verdadeiro"/>
+                <input id="falso" class="btn" type="button" value="Falso"/>
+                <input id="submeter" class="btn" type="button" value="Verificar!"/>
+            </article>
+        </div>
+    </div>
+
+    <div id="resposta_certa" class="container-fluid">
+        <div class="align-items-center text-center">
+            <h2>Parabéns!!</h2>
+            <h4>Acertaste a resposta! Estás mesmo consciente do quão prejudicial o plástico é para a tua Vila! Vamos para o próximo nível!
+            </h4>
+            <article><input id="proximo_nivel" class="btn" type="button" value="Continuar"/></article>
+        </div>
+    </div>
+
+    <div id="resposta_errada" class="container-fluid">
+        <div class="align-items-center text-center">
+            <h2>Errado!!</h2>
+            <h4>Alguém precisa de aprender mais sobre o impacto negativo dos plástico... Mas não desanimes! Vamos tentar outra vez!
+            </h4>
+            <article><input id="refazer_questao" class="btn" type="button" value="Tentar Novamente"/></article>
+        </div>
+    </div>
+
+    <div id="barra" class="text-center">
+        <img id="logo" class="btn img-fluid" src="imagens/logo/logo_barra.png">
+
+        <div id="time">Tempo
+            <input id="tempo_txt"/>
+        </div>
+
+        <div id="points">Pontos
+            <input id="pontos" value="0"/>
+        </div>
+
+        <div id="sounds">
+            <img id="icon_s" class="btn" src="imagens/Botoes/sound_on.png">
+            <img id="icon_m" class="btn" src="imagens/Botoes/music_on.png">
+            <img id="icon_b" class="btn" src="imagens/Botoes/back.png">
+        </div>
+
+    </div>
+
+    <div id="area_limpa" class="container-fluid">
+        <div class="align-items-center text-center">
+            <h2>Parabéns!!</h2>
+            <h3 id="regiao"></h3>
+            <h4>Conseguiste salvar esta área dos vilões! Repete o mesmo processo na área seguinte, até teres conseguido salvar toda a tua Vila!”
+            </h4>
+            <article><input id="next" class="btn" type="button" value="Próxima área"/></article>
+        </div>
+    </div>
+
+    <div id="tudo_limpo" class="container-fluid">
+        <div class="align-items-center text-center">
+            <h2>Incrível!!!</h2>
+            <h3 id="regiao_final"></h3>
+            <h4> Conseguiste transformar todos os objetos da Vila e, assim, salvá-la dos microplásticos! Tu e fungo Zalerion são os heróis de todos os habitantes!
+            </h4>
+            <article><input id="next_final" class="btn" type="button" value="Próxima área"/></article>
+        </div>
+    </div>
+
+
+</main>
+
+
+</body>
+</html>
